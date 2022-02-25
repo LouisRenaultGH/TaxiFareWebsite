@@ -31,13 +31,13 @@ t = st.time_input('Time of pickup', datetime.time(10, 20))
 pickup_date = datetime.datetime(pickup_date.year, pickup_date.month, pickup_date.day, t.hour, t.minute)
 
 # pickup_lag et long
-pu_long = st.number_input('Pickup longitude', format='%.7f', value=40.7614327)
-pu_lat = st.number_input('Pickup latitude', format='%.7f', value=-73.9798156)
+pu_long = st.number_input('Pickup longitude', format='%.7f', value=-73.9798156)
+pu_lat = st.number_input('Pickup latitude', format='%.7f', value=40.7614327)
 
 
 # drop_offlag et long
-do_long = st.number_input('Drop-off longitude', format='%.7f', value=40.6513111)
-do_lat = st.number_input('Drop-off latitude', format='%.7f', value=-73.8803331)
+do_long = st.number_input('Drop-off longitude', format='%.7f', value=-73.8803331)
+do_lat = st.number_input('Drop-off latitude', format='%.7f', value=40.6513111 )
 
 # number of passengers
 num_pass = st.number_input('Number of passengers', format='%d', step=1, min_value=0)
